@@ -81,10 +81,8 @@ def wake_up(message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     button_new_funny_cat = types.KeyboardButton('Новые смешные котики')
     button_dog = types.KeyboardButton('Я устал от котиков')
-    button_axolotl = types.KeyboardButton('Хочу экзотики')
     keyboard.add(button_new_funny_cat)
     keyboard.add(button_dog)
-    keyboard.add(button_axolotl)
 
     bot.send_message(
         chat_id=chat_id,
